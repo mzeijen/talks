@@ -1,9 +1,12 @@
 = Presentations
 
-by Patrick van Dissel
+by Maurice Zeijen
+
+presentation framework put together by https://github.com/pvdissel/talks[Patrick van Dissel]
+
 
 Just want to view the presentations?
-Go to: http://ikoodi.nl/talks
+Go to: _(not yet available)_
 
 Want to see the sources?
 Take a look in the `subprojects` directory for the specific presentations.
