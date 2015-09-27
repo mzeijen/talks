@@ -1,3 +1,19 @@
 body {
-    zoom: 150%;
+    zoom: 175%;
+}
+
+@media print {
+    body {
+        zoom: 75%;
+    }
+}
+
+.sandboxRoot, .operatorBox div {
+    box-shadow: none !important;
+}
+
+.operatorBox  {
+    border: none !important;
+    border-bottom: solid 1px black !important;
+    border-top: solid 1px black !important;
 }
