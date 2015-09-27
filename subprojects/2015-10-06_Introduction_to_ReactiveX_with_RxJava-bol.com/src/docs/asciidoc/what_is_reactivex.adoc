@@ -18,7 +18,7 @@ ReactiveX a.k.a Reactive Extensions a.k.a RX
 
 ReactiveX is a combination of the best ideas from the *Observer* pattern, the *Iterator* pattern and *functional programming*.
 
-video::observer_pattern.mp4[options="autoplay,loop,nocontrols"]
+video::observer_pattern.mp4[options="loop,nocontrols,data-autoplay"]
 
 == Ubiquitous
 
