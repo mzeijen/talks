@@ -45,30 +45,31 @@ section.has-light-background h6 {
  * GLOBAL STYLES
  *********************************************/
 body {
-    background: #3366cc;
+    background: #fff;
 }
 
 .reveal {
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 38px;
     font-weight: normal;
-    color: #fff;
+    color: #000;
 }
 
 ::selection {
-    color: #fff;
-    background: #d3e5f6;
+    color: #000;
+    background: #E0E8F7;
     text-shadow: none;
 }
 
 ::-moz-selection {
-    color: #fff;
-    background: #d3e5f6;
+    color: #000;
+    background: #E0E8F7;
     text-shadow: none;
 }
 
 .reveal .slides > section,
 .reveal .slides > section > section {
+    padding: 0;
     line-height: 1.3;
     font-weight: inherit;
 }
@@ -82,8 +83,8 @@ body {
 .reveal h4,
 .reveal h5,
 .reveal h6 {
-    margin: 0 0 20px 0;
-    color: #fff;
+    margin: 0 0 10px 0;
+    color: #000;
     font-family: 'Open Sans', Arial, Helvetica, sans-serif;
     font-weight: 600;
     line-height: 1.2;
@@ -93,11 +94,15 @@ body {
 }
 
 .reveal h1 {
-    font-size: 2.5em;
+    font-family: 'Clarendon LT Std', 'Open Sans', Arial, Helvetica, sans-serif;
+    font-size: 2.0em;
+    color: #3366CC;
 }
 
 .reveal h2 {
+    font-family: 'Clarendon LT Std', 'Open Sans', Arial, Helvetica, sans-serif;
     font-size: 1.6em;
+    color: #3366CC;
 }
 
 .reveal h3 {
@@ -116,7 +121,7 @@ body {
  * OTHER
  *********************************************/
 .reveal p {
-    margin: 20px 0;
+    margin: 10px 0;
     line-height: 1.3;
 }
 
@@ -218,7 +223,7 @@ body {
     font-style: italic;
     font-weight: bold;
     text-align: justify;
-    color: #3366cc;
+    color: #000;
     background: #fff;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
     -webkit-border-radius: 14px;
@@ -282,7 +287,7 @@ body {
 }
 
 .reveal table {
-    margin: auto;
+    margin: 1em 0 0 0;
     border-collapse: collapse;
     border-spacing: 0;
 }
@@ -293,12 +298,13 @@ body {
 
 .reveal table th {
     font-weight: bold;
+    color: #3366CC;
 }
 
 .reveal table th, .reveal table td {
     text-align: left;
     padding: 0.1em 0.5em 0.1em 0.5em;
-    border-bottom: 1px solid;
+    /*border-bottom: 1px solid;*/
 }
 
 .reveal table tr:last-child td {
@@ -328,7 +334,7 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-    color: #f6f3ed;
+    color: #3366cc;
     text-decoration: none;
     -webkit-transition: color 0.15s ease;
     -moz-transition: color 0.15s ease;
@@ -336,7 +342,7 @@ body {
 }
 
 .reveal a:hover {
-    color: #d3e5f6;
+    color: #068ee9;
     text-shadow: none;
     border: none;
 }
@@ -352,8 +358,8 @@ body {
 .reveal section img {
     margin: 15px 0px;
     background: rgba(255, 255, 255, 0.12);
-    border: 4px solid #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+    /*border: 4px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);*/
 }
 
 .reveal a img {
@@ -371,8 +377,13 @@ body {
 /*********************************************
  * First slide
  *********************************************/
+
+.reveal #header h1 {
+    color: #fff;
+}
+
 .reveal #header .details {
-    color: #d3e5f6;
+    color: #000;
 }
 
 .reveal #header .details span {
@@ -391,53 +402,39 @@ body {
     font-size: 0.6em;
 }
 
-.reveal #header:after {
-    content: '';
-    position: absolute;
-    background-image: url('logo_bolcom_blauw_pay-off_rgb.png');
-    background-repeat: no-repeat;
-    background-position: center bottom;
-    background-size: 300px auto;
-    width: 100%;
-    height: 200%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-}
-
 /*********************************************
  * NAVIGATION CONTROLS
  *********************************************/
 .reveal .controls div.navigate-left, .reveal .controls div.navigate-left.enabled {
-    border-right-color: #d3e5f6;
+    border-right-color: #373737;
 }
 
 .reveal .controls div.navigate-right, .reveal .controls div.navigate-right.enabled {
-    border-left-color: #d3e5f6;
+    border-left-color: #373737;
 }
 
 .reveal .controls div.navigate-up, .reveal .controls div.navigate-up.enabled {
-    border-bottom-color: #d3e5f6;
+    border-bottom-color: #373737;
 }
 
 .reveal .controls div.navigate-down, .reveal .controls div.navigate-down.enabled {
-    border-top-color: #d3e5f6;
+    border-top-color: #373737;
 }
 
 .reveal .controls div.navigate-left.enabled:hover {
-    border-right-color: #f6f3ed;
+    border-right-color: #bdbdbd;
 }
 
 .reveal .controls div.navigate-right.enabled:hover {
-    border-left-color: #f6f3ed;
+    border-left-color: #bdbdbd;
 }
 
 .reveal .controls div.navigate-up.enabled:hover {
-    border-bottom-color: #f6f3ed;
+    border-bottom-color: #bdbdbd;
 }
 
 .reveal .controls div.navigate-down.enabled:hover {
-    border-top-color: #f6f3ed;
+    border-top-color: #bdbdbd;
 }
 
 /*********************************************
@@ -458,5 +455,5 @@ body {
  * SLIDE NUMBER
  *********************************************/
 .reveal .slide-number {
-    color: #fff;
+    color: #000;
 }
