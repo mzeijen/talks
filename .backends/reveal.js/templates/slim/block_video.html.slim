@@ -22,6 +22,6 @@
       iframe width=(attr :width) height=(attr :height) src=src frameborder=0 allowfullscreen=!(option? 'nofullscreen')
     - else
       video(src=media_uri(attr :target) width=(attr :width) height=(attr :height)
-          poster=((attr :poster) ? media_uri(attr :poster) : nil) autoplay=(option? 'autoplay')
+          poster=((attr :poster) ? media_uri(attr :poster) : nil) autoplay=(option? 'autoplay') data-ignore=(option? 'data-ignore') data-autoplay=(option? 'data-autoplay')
           controls=!(option? 'nocontrols') loop=(option? 'loop'))
         |Your browser does not support the video tag.
