@@ -1,0 +1,84 @@
+[data-state=center-on]
+= What is ReactiveX?
+
+[NOTE.speaker]
+--
+Now you still don't know what it is so let me first explain what ReactiveX is
+--
+
+[data-background={imagesdir}/reactivex.png]
+== !
+
+[NOTE.speaker]
+--
+ReactiveX a.k.a Reactive Extensions a.k.a RX
+--
+
+== The Observer pattern done right
+
+ReactiveX is a combination of the best ideas from the *Observer* pattern, the *Iterator* pattern and *functional programming*.
+
+video::observer_pattern.mp4[options="autoplay,loop,nocontrols"]
+
+== Ubiquitous
+
+ReactiveX is meant for everywhere and everything.
+
+image::reactivx_front.png[]
+
+== Ubiquitous
+
+ReactiveX is meant for everywhere and everything.
+
+image::reactivx_front_back.png[]
+
+== Ubiquitous
+
+ReactiveX is meant for everywhere and everything.
+
+image::reactivx_front_back_cross.png[]
+
+== Better codebases
+
+image::reactivex_functional.png[width=900]
+
+== Better codebases
+
+image::reactivex_functional.png[width=900]
+image::reactivex_lessismore.png[width=900]
+
+== Better codebases
+
+image::reactivex_functional.png[width=900]
+image::reactivex_lessismore.png[width=900]
+image::reactivex_asyncerrorhandling.png[width=900]
+
+== Better codebases
+
+image::reactivex_functional.png[width=900]
+image::reactivex_lessismore.png[width=900]
+image::reactivex_asyncerrorhandling.png[width=900]
+image::reactivex_concurrencymadeeasy.png[width=900]
+
+== Reactive Revolution
++++<br/><br/><br/>+++
+[quote, reactivex.io]
+____
+ReactiveX is more than an API, it's an idea and a breakthrough in programming. It has inspired several other APIs, frameworks, and even programming languages.
+____
+
+== Who is using it?
++++<br/>+++
+
+image::reactivex_who_is_using_it.png[]
+
+
+== We are using it!
++++<br/><br/>+++
+
+image::Bol.com_logo.svg.png[width=1000]
+
+[NOTE.speaker]
+--
+We are using it: Webshop, ShopFindService, Traffic Service, Clerk / Shoebox libraries, Everything with Hystrix
+--

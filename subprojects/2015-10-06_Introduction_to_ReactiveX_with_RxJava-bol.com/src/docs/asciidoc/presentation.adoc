@@ -1,0 +1,44 @@
+:backend: revealjs
+:revealjs_theme: black
+:revealjs_customtheme: theme/bol.com/bol.com.css
+:revealjs_control: true
+:revealjs_center: true
+:revealjs_history: true
+:revealjs_transition: none
+:revealjs_header_background: ./theme/bol.com/header_background.png
+:revealjs_header_state: center-on
+:revealjs_width: 1280
+:revealjs_height: 720
+:source-highlighter: highlightjs
+:highlightjs_style: highlight.js/styles/solarized_dark.css
+:highlightjs_style_alternative: highlight.js/styles/solarized_light.css
+// Relative to generated HTML
+:imagesdir: ./images
+////
+Relative to original asciidoc document,
+as source code is processed before creation
+of the html-file
+////
+:sources: ../..
+
+= An introduction to ReactiveX with RxJava
+Maurice Zeijen
+:docinfo1:
+
+include::what_is_reactivex.adoc[leveloffset=+1]
+
+== Operators
+
++++<iframe src="marbles/marbles.html?m=filter"></iframe>+++
+
+
+== Resources
+
+Give feedback & discuss ideas
+
+[data-state=center-on]
+== Thanks
+
+Slides +
+_TODO - link to slides_ +
+https://github.com/mzeijen/talks

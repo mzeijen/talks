@@ -1,4 +1,4 @@
-//include '[presentation name]'
+include '2015-10-06_Introduction_to_ReactiveX_with_RxJava-bol.com'
 
 rootProject.name = 'mzeijen-talks'
 rootProject.children.each { project ->

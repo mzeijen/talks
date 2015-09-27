@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script src="CustomElements.min.js"></script>
+    <script src="element.js"></script>
+    <script src="jquery-2.1.4.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <script>
+        $(function(){
+            function qs(key) {
+                key = key.replace(/[*+?^$.\[\]{}()|\\\/]/g, "\\$&"); // escape RegEx meta chars
+                var match = location.search.match(new RegExp("[?&]"+key+"=([^&]+)(&|$)"));
+                return match && decodeURIComponent(match[1].replace(/\+/g, " "));
+            }
+
+            $('body').append('<rx-marbles key="'+ qs("m") +'" />')
+
+            $(document).keydown(function(event) {
+
+                if(!window.parent) {
+                    return;
+                }
+
+                var reveal = window.parent.Reveal;
+
+                switch( event.keyCode ) {
+                    // p, page up
+                    case 80: case 33: reveal.navigatePrev(); break;
+                    // n, page down
+                    case 78: case 34: reveal.navigateNext(); break;
+                    // h, left
+                    case 72: case 37: reveal.navigateLeft(); break;
+                    // l, right
+                    case 76: case 39: reveal.navigateRight(); break;
+                    // k, up
+                    case 75: case 38: reveal.navigateUp(); break;
+                    // j, down
+                    case 74: case 40: reveal.navigateDown(); break;
+                    // home
+                    case 36: reveal.slide( 0 ); break;
+                    // end
+                    case 35: reveal.slide( Number.MAX_VALUE ); break;
+                    // space
+                    case 32: reveal.navigateNext(); break;
+                    // f
+                    case 70: reveal.enterFullscreen(); break;
+                }
+            });
+        })
+    </script>
+</body>
+</html>
