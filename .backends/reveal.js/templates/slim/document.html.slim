@@ -66,7 +66,7 @@ html lang=(attr :lang, 'en' unless attr? :nolang)
     .reveal
       / Any section element inside of this container is displayed as a slide
       .slides
-        section
+        section data-background=(attr :revealjs_header_background) data-state=(attr :revealjs_header_state) data-transition=(attr :revealjs_header_transition)
           #header
             - if has_header?
               - unless notitle
@@ -99,6 +99,10 @@ html lang=(attr :lang, 'en' unless attr? :nolang)
     javascript:
       // See https://github.com/hakimel/reveal.js#configuration for a full list of configuration options
       Reveal.initialize({
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions
+        width: #{attr 'revealjs_width', '960'},
+        height: #{attr 'revealjs_height', '700'},
         // Display controls in the bottom right corner
         controls: #{attr 'revealjs_controls', 'true'},
         // Display a presentation progress bar
