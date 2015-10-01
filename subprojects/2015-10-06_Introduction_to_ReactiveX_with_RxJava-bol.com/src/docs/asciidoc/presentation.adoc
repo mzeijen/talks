@@ -26,11 +26,7 @@ Maurice Zeijen
 :docinfo1:
 
 include::what_is_reactivex.adoc[leveloffset=+1]
-
-== Operators
-
-+++<iframe src="marbles/marbles.html?m=filter"></iframe>+++
-
+include::operators.adoc[leveloffset=+1]
 
 == Resources
 
